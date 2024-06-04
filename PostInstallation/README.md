@@ -28,3 +28,12 @@ Colors # Adds color to pacman output for easier reading.
 VerbosePkgLists # Cleaner pkg listing on updates.``
 ParallelDownloads = 5 # Allows updates to go faster.
 ```
+
+### Yay install
+Although for the most part you can go through this setup without the AUR, it's still a good idea to have yay in case you need some package not supported. Simply make sure that the package is safe or review the package itself.
+
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
