@@ -9,3 +9,5 @@ First download and extract the tar.gz release file:
 wget -c https://github.com/SiriusAhu/Persona_5_Royal_Grub_Themes/releases/download/v1.0/joker.tar.gz -P /boot/grub/themes
 tar -xvzf /boot/grub/themes/joker.tar.gz -C /boot/grub/themes --no-same-owner
 ```
+
+Now we just set the value for `GRUB_THEME` in `/etc/default/grub` to the path we just used. `/boot/grub/themes/joker/theme.txt` Make sure to uncomment the line and run `grub-mkconfig -o /boot/grub/grub.cfg` like before. Once done simply reboot.
