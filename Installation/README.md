@@ -118,7 +118,6 @@ Run the following commands so arch knows which partition is the swap partition. 
 
 ```
 mkswap /dev/sda2
-swapon /dev/sda2
 ```
 
 ### Format Root and Home
@@ -126,4 +125,20 @@ Root and home (or any other linux partition) can be formated in the same way, wi
 
 ```
 mkfs.ext4 /dev/sda3
+```
+
+### Mount partitions
+Run the following commands when appropriate.
+
+```
+mount --mkdir /dev/sda3 /mnt # Mount Root partition to /mnt
+mount --mkdir /dev/sda1 /mnt/boot # Mount EFI partition to /mnt/boot
+swapon /dev/sda2 # set swap partition
+```
+
+## Install firmware and linux kernel into mount
+Once mounted, you need to install the kernel into the partitions. This can be done with the following script.
+
+```
+pacstrap -K /mnt base linux linux-firmware
 ```
