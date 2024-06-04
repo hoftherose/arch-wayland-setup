@@ -17,3 +17,12 @@ Although most of the config is going to be aesthetic, this part will only walk y
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="nvidia_drm.modeset=1" # This for nvidia systems, if value already has parameters, simply append to end.
 ```
+
+## Pacman Config
+There are multiple configuration settings in pacman that aren't by default which we should set. The following are examples but feel free to add more.
+
+```
+Colors # Adds color to pacman output for easier reading.
+VerbosePkgLists # Cleaner pkg listing on updates.``
+ParallelDownloads = 5 # Allows updates to go faster.
+```
