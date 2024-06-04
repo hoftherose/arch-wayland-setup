@@ -11,3 +11,7 @@ tar -xvzf /boot/grub/themes/joker.tar.gz -C /boot/grub/themes --no-same-owner
 ```
 
 Now we just set the value for `GRUB_THEME` in `/etc/default/grub` to the path we just used. `/boot/grub/themes/joker/theme.txt` Make sure to uncomment the line and run `grub-mkconfig -o /boot/grub/grub.cfg` like before. Once done simply reboot.
+
+## Customize pacman
+### Ilovecandy
+To make the pacman appear on downloads add the line `ILoveCandy` right below `# Misc Options`
