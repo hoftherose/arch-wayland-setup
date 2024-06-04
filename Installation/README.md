@@ -1,6 +1,6 @@
 # Arch Vanilla Installation
 
-Note: Make sure you go through the preparation section before making a new installation of Arch. This guide is more based on this following [video](https://www.youtube.com/watch?v=FxeriGuJKTM) than the [arch guide](https://wiki.archlinux.org/title/Installation_guide).
+Note: Make sure you go through the preparation section before making a new installation of Arch. This guide is based on the [arch guide](https://wiki.archlinux.org/title/Installation_guide).
 
 [TOC]
 
@@ -18,3 +18,9 @@ exit
 ```
 
 Once you are back on zsh, you can test your connection pinging a site like google.com. `ping google.com`
+
+## Setup keyboard
+
+Section 1.6 of the [guide](https://wiki.archlinux.org/title/Installation_guide) explains this quickly.
+
+Although this will only set the installation keyboard settings, you should also be able to do the same process once you finished the installation to change keyboard on arch itself. But by that time you will have more friendly GUI options.
