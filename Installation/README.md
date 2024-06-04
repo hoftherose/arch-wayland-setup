@@ -137,10 +137,27 @@ swapon /dev/sda2 # set swap partition
 ```
 
 ## Install firmware and linux kernel into mount
-Once mounted, you need to install the kernel into the partitions. This can be done with the following script.
+Once mounted, you need to install the kernel into the partitions. This can be done with the following script. The second line is for setting the environment to the new partitions root.
 
 ```
 pacstrap -K /mnt base linux linux-firmware
+arch-chroot /mnt
+```
+
+## Grub Setup
+Now that your are in the partition environment, we need to install a few things that will be used later. The first command will update pacman and refresh keys while the second installs tooling that will be needed soon.
+
+```
+pacman -Syu && pacman-key --refresh-keys
+sudo pacman -S grub neovim efibootmgr
+```
+
+If there are issues with the keys, reset keys by following the [documentation](https://wiki.archlinux.org/title/Pacman/Package_signing#Resetting_all_the_keys).
+
+Otherwise run the following to install the path on grub for bootloading. Everything should be found in /boot/grub.
+
+```
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 ```
 
 ## Final Configuration
