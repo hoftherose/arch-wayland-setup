@@ -17,10 +17,10 @@ Now we just set the value for `GRUB_THEME` in `/etc/default/grub` to the path we
 To make the pacman appear on downloads add the line `ILoveCandy` right below `# Misc Options`
 
 ## Graphics and WM/DE
-These are the GUI enabling libraries to get out of the terminal prison. We will be installing `wayland` although you could also use xorg which is older and more stable. For our window manager we will use `hyprland`, while the Display Manager will be `sddm`.
+These are the GUI enabling libraries to get out of the terminal prison. We will be installing `wayland` although you could also use xorg which is older and more stable. For our window manager we will use `hyprland`. This will use the following [repo](https://github.com/SolDoesTech/HyprV4) for setting up hyprland quickly, but we will not use the script, instead we will be installing the tools as we go and only when needed.
 
-### Install Wayland
-We are going to install 3 things here real quick: hyprland, kitty and gtk3. hyprland will be our DE, which will install and use wayland, kitty is the default terminal software. gtk3 will be needed in order to open kitty on hyprland. Once you are done you can run `Hyprland` and 
+### Install Hyprland
+We are going to install 3 things here real quick: hyprland, kitty and gtk3. hyprland will be our DE, which will install and use wayland, kitty is the default terminal software. gtk3 will be needed in order to open kitty on hyprland. Once you are done you can run `Hyprland`.
 
 ```
 sudo pacman -S hyprland kitty gtk3
