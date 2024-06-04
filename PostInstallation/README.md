@@ -10,3 +10,10 @@ Connect to the internet using nmcli (assuming you installed networkmanager). If 
 
 ## Creating a User
 Follow the [guide](https://wiki.archlinux.org/title/Users_and_groups#User_management) to see best practices on creating users.
+
+## Grub Config
+Although most of the config is going to be aesthetic, this part will only walk you through the fuctional configuration for the grub.
+
+```
+GRUB_CMDLINE_LINUX_DEFAULT="nvidia_drm.modeset=1" # This for nvidia systems, if value already has parameters, simply append to end.
+```
