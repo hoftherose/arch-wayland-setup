@@ -158,6 +158,7 @@ Otherwise run the following to install the path on grub for bootloading. Everyth
 
 ```
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Final Configuration
