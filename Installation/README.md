@@ -102,3 +102,28 @@ You can separate root and home into two different partitions, this although has 
 Once you are finished, you can use `p` to print the partition table and review your changes before writing them to disk. Once you finished confirming use `w` to write. Once again, if you want to quit without writing, leave using the `q` command.
 
 > NOTE: DO NOT FORGET what partition is associated with which sub-disk. It will be used later. You can always reference by size using `fdisk -l`.
+
+## Post partitioning
+Once you have partitioned, there are a few commands we need to run to properly format our partitions.
+
+### Format Boot
+Do NOT format the boot if it already existed, in this case we assume it was just made in the previous steps, therefore we would want to run the following on the boot 
+
+```
+mkfs.fat -F 32 /dev/sda1
+```
+
+### Format Swap
+Run the following commands so arch knows which partition is the swap partition. Make sure to correct if the partition here is not the same as yours.
+
+```
+mkswap /dev/sda2
+swapon /dev/sda2
+```
+
+### Format Root and Home
+Root and home (or any other linux partition) can be formated in the same way, with the below command. If warning message occurs proceed since we, again, are formating the entire disk.
+
+```
+mkfs.ext4 /dev/sda3
+```
