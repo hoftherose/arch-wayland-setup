@@ -9,7 +9,8 @@ General recommendations for setting up your system once installed. Based off of 
 Connect to the internet using nmcli (assuming you installed networkmanager). If not simply reboot and mount from the live-usb and install anything that you may have been missing. Follow the [guide](https://wiki.archlinux.org/title/NetworkManager#Usage) to know how to use nmcli to connect to the internet.
 
 ## Creating a User
-To create a new user simply run `usermod -m -aG wheel USER_NAME`. The wheel group should give you access to the sudo command. The `-m` flag will create a home directory for this user. You can also use the `-s` flag to add which shell you want to use for that user, by default it uses bash.
+To create a new user simply run `useradd -m -G wheel USER_NAME` to create user, `usermod -aG sudo USER_NAME` if you want them to be a sudouser and `passwd USER_NAME` to set password. The `-m` flag will create a home directory for this user. You can also use the `-s` flag to add which shell you want to use for that user, by default it uses bash.
+
 Follow the [guide](https://wiki.archlinux.org/title/Users_and_groups#User_management) to see best practices on creating users.
 
 ## Grub Config
