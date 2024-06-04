@@ -142,3 +142,6 @@ Once mounted, you need to install the kernel into the partitions. This can be do
 ```
 pacstrap -K /mnt base linux linux-firmware
 ```
+
+## Final Configuration
+These steps should be taken and are simple to follow from the [guide](https://wiki.archlinux.org/title/Installation_guide). This will be steps 3 and 4.
