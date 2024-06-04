@@ -45,3 +45,12 @@ decoration {
     ...
 }
 ```
+
+### Setup for nvidia
+Install the following packages only if you need nvidia support. The second command does not NEED yay but it does need to be installed from the aur.
+
+```
+pacman -S linux-headers nvidia-dkms qt5-wayland qt5ct libva
+yay libva-nvidia-driver-git # needs to install from aur
+```
+
