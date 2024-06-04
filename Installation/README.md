@@ -45,3 +45,60 @@ q # Exits without writing changes
 ```
 
 The steps we need to take will vary on how we are trying to install arch, if we are trying to allow for dual boot it will be significantly more complicated, while clearing out a full disk and installing on the full disk is the simpler approach. If something is not clear, it is ALWAYS safer to double check your system or the documentation. Here is a [video](https://www.youtube.com/watch?v=LPYfoFSXB9A) which goes deep into the subject of fdisk.
+
+### Using entire disk for installation.
+Since we are using the entire disk we are going to use /dev/sda without a number associated. `fdisk /dev/sda`. 
+
+#### Creating partition table
+
+```
+g # UEFI system, needs boot partititon
+o # Non-UEFI system, does not need boot partition, instead uses boot flag
+```
+
+#### Creating boot
+
+```
+n # Create new partition. Don't create boot partition for non-UEFI.
+(default) # Partition number as next number, remember which is which
+First sector: (Default) # Since we are using the entire disk, leave default
+Last sector: +2G # 2G for the boot, half if storage is limited.
+t # We need to change the partition type to ensure that this is swap
+L # Lists all partition types, you should look for "EFI system"
+1 # Could be different, ensure number is correct
+```
+
+#### Creating swap
+
+```
+n # Create new partition. If non-UEFI choose primary partition
+(default) # Partition number as next number, remember which is which
+First sector: (Default) # Since we are using the entire disk, leave default
+Last sector: +16G # 16G for the Swap, can be less (1G) if storage is issue.
+t # We need to change the partition type to ensure that this is swap
+L # Lists all partition types, you should look for "linux swap"
+19 # Could be different, ensure number is correct
+```
+
+#### Creating root parititon
+```
+n # Create new partition. If non-UEFI choose primary partition
+(default) # Partition number as next number, remember which is which
+First sector: (Default) # Will default to right after partition 1.
+Last sector: (Default) # Will consume rest of disk.
+# Should be left as linux partition type
+```
+
+If using Non-UEFI set boot flag with the following
+
+```
+a # If using non-UEFI toggle this partitions boot flag with
+```
+
+#### Creating home parititon (Optional)
+You can separate root and home into two different partitions, this although has it's advantages, I tend to format them both together anyways. Documentation about more partition schemas can be found [here](https://wiki.archlinux.org/title/Partitioning#Partition_scheme)
+
+#### Confirm partition table
+Once you are finished, you can use `p` to print the partition table and review your changes before writing them to disk. Once you finished confirming use `w` to write. Once again, if you want to quit without writing, leave using the `q` command.
+
+> NOTE: DO NOT FORGET what partition is associated with which sub-disk. It will be used later. You can always reference by size using `fdisk -l`.
