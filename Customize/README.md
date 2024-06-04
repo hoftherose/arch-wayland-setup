@@ -15,3 +15,9 @@ Now we just set the value for `GRUB_THEME` in `/etc/default/grub` to the path we
 ## Customize pacman
 ### Ilovecandy
 To make the pacman appear on downloads add the line `ILoveCandy` right below `# Misc Options`
+
+## Graphics and WM/DE
+These are the GUI enabling libraries to get out of the terminal prison. We will be installing `wayland` although you could also use xorg which is older and more stable. For our window manager we will use `hyprland`, while the Display Manager will be `sddm`.
+
+### Install Wayland
+
