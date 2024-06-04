@@ -149,7 +149,7 @@ Now that your are in the partition environment, we need to install a few things 
 
 ```
 pacman -Syu && pacman-key --refresh-keys
-sudo pacman -S grub neovim efibootmgr base-devel networkmanager wget
+pacman -S grub neovim efibootmgr base-devel networkmanager wget
 ```
 
 If there are issues with the keys, reset keys by following the [documentation](https://wiki.archlinux.org/title/Pacman/Package_signing#Resetting_all_the_keys).
