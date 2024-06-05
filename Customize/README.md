@@ -85,4 +85,5 @@ pipewire-alsa       # pipewire alsa client
 pipewire-audio      # pipewire audio client
 pipewire-jack       # pipewire jack client
 pipewire-pulse      # pipewire pulseaudio client
+pavucontrol         # Control gui for pipewire
 ```
