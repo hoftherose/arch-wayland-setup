@@ -59,3 +59,29 @@ Once installed edit `/etc/mkinitcpio.conf` and modify the `MODULES` variable to 
 ```
 sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
 ```
+
+### More packages for hyprland
+The following list would be installed. There will be a folder for config changes for each of these when needed.
+
+```
+sddm-git            # Login (display) manager Git version to avoid bugs
+waybar              # Top menu bar for wayland
+ttf-font-awesome    # For waybar font
+swaybg              # background setter
+waypaper            # Frontend for swaybg
+wofi                # Application menu
+firefox             # Or navigator of your choice
+swaync              # Notification daemon
+spotify             # Music player
+```
+
+### Audio and video dependencies
+Below are the audio/video servers needed to play music.
+
+```
+pipewire            # audio/video server
+pipewire-alsa       # pipewire alsa client
+pipewire-audio      # pipewire audio client
+pipewire-jack       # pipewire jack client
+pipewire-pulse      # pipewire pulseaudio client
+```
