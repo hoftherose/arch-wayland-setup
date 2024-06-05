@@ -54,3 +54,8 @@ pacman -S linux-headers nvidia-dkms qt5-wayland qt5ct libva
 yay libva-nvidia-driver-git # needs to install from aur
 ```
 
+Once installed edit `/etc/mkinitcpio.conf` and modify the `MODULES` variable to `MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)` then generate a new initramfs image with the following cmd.
+
+```
+sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
+```
