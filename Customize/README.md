@@ -86,4 +86,5 @@ pipewire-audio      # pipewire audio client
 pipewire-jack       # pipewire jack client
 pipewire-pulse      # pipewire pulseaudio client
 pavucontrol         # Control gui for pipewire
+helvum (optional)   # Patch bay for pipewire, audio routing and filtering
 ```
