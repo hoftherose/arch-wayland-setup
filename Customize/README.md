@@ -74,6 +74,7 @@ firefox             # Or navigator of your choice
 swaync              # Notification daemon
 spotify             # Music player
 ranger              # Vim-like terminal file manager
+wallset             # Background manager which allows videos.
 ```
 
 ### Audio and video dependencies
