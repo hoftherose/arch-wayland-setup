@@ -75,6 +75,7 @@ swaync              # Notification daemon
 spotify             # Music player
 ranger              # Vim-like terminal file manager
 wallset             # Background manager which allows videos.
+wev                 # Used for seeing keystrokes before setting keybindings
 ```
 
 ### Audio and video dependencies
