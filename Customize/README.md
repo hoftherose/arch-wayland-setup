@@ -70,6 +70,8 @@ ttf-font-awesome    # For waybar font
 swaybg              # background setter
 waypaper            # Frontend for swaybg
 wofi                # Application menu
+grim                # Screenshot tool
+slurp               # Screen selection tool
 firefox             # Or navigator of your choice
 swaync              # Notification daemon
 spotify             # Music player
