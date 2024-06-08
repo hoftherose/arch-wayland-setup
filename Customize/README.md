@@ -80,6 +80,7 @@ ranger              # Vim-like terminal file manager
 wallset             # Background manager which allows videos.
 wev                 # Used for seeing keystrokes before setting keybindings
 wlogout             # Power off integration
+python-pywal        # Utils for getting color pallet from image
 ```
 
 ### Audio and video dependencies
