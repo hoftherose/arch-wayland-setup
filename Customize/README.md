@@ -76,6 +76,7 @@ spotify             # Music player
 ranger              # Vim-like terminal file manager
 wallset             # Background manager which allows videos.
 wev                 # Used for seeing keystrokes before setting keybindings
+wlogout             # Power off integration
 ```
 
 ### Audio and video dependencies
