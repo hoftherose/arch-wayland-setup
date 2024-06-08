@@ -73,6 +73,7 @@ wofi                # Application menu
 firefox             # Or navigator of your choice
 swaync              # Notification daemon
 spotify             # Music player
+spicetify           # Customize spotify, install spicetify-marketplace for better integration.
 ranger              # Vim-like terminal file manager
 wallset             # Background manager which allows videos.
 wev                 # Used for seeing keystrokes before setting keybindings
