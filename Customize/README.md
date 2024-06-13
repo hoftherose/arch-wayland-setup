@@ -73,6 +73,7 @@ wofi                # Application menu
 grim                # Screenshot tool
 slurp               # Screen selection tool
 firefox             # Or navigator of your choice
+discord             # Voice and chat application
 swaync              # Notification daemon
 spotify             # Music player
 spicetify           # Customize spotify, install spicetify-marketplace for better integration.
