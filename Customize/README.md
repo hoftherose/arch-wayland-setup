@@ -83,6 +83,9 @@ wev                 # Used for seeing keystrokes before setting keybindings
 wlogout             # Power off integration
 python-pywal        # Utils for getting color pallet from image
 fish                # Terminal shell
+mozc                # Japanese translate interface
+fcitx5              # Multi-language support
+fcitx5-config       # Configuration UI for fcitx5
 ```
 
 ### Audio and video dependencies
