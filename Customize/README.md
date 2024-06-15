@@ -69,6 +69,7 @@ waybar              # Top menu bar for wayland
 ttf-font-awesome    # For waybar font
 ttf-sazanami        # Japanese char fonts
 ttf-vlgothic        # Japanese char fonts
+ttf-meslo-nerd-font # Powerlevel 10k fonts for waybar
 swaybg              # background setter
 waypaper            # Frontend for swaybg
 wofi                # Application menu
