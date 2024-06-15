@@ -84,6 +84,7 @@ ranger              # Vim-like terminal file manager
 wallset             # Background manager which allows videos.
 wev                 # Used for seeing keystrokes before setting keybindings
 wlogout             # Power off integration
+inotify-tools       # Tooling for checking when files are modified (scripting config)
 python-pywal        # Utils for getting color pallet from image
 fish                # Terminal shell
 mozc                # Japanese translate interface
