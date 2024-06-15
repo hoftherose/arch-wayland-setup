@@ -67,6 +67,8 @@ The following list would be installed. There will be a folder for config changes
 sddm-git            # Login (display) manager Git version to avoid bugs
 waybar              # Top menu bar for wayland
 ttf-font-awesome    # For waybar font
+ttf-sazanami        # Japanese char fonts
+ttf-vlgothic        # Japanese char fonts
 swaybg              # background setter
 waypaper            # Frontend for swaybg
 wofi                # Application menu
