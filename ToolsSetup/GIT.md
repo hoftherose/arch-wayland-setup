@@ -26,3 +26,8 @@ Once you enter the command you will be asked to confirm the location, as long as
 Once named, you will be asked to create a password, although this adds to the security of the keys, if you don't want to enter your password continuosly, simply enter an empty password. If you do setup a password, do remember it as there will be no way of using the keys without it. New keys are usually not hard to make but the nontheless it should be avoided for something such as this.
 
 Once the key is created, go to your folder $HOME/.ssh and find the .pub key. This is your public key which can be shown (try not to though). You will need this to follow the next steps.
+
+### Setup keys on online repos
+Setup is usually the same on all platforms, only the settings menu changes places. On github click on your profile picture top right and go to settings. In the "SSH and GPG keys" tab find the button "New SSH key". On gitlab click again on your profile picture top left, and go to preferences. In the "SSH Keys" tab click on "Add new key". From here the steps are mostly the same.
+
+In the key section paste your .pub file, it should start with the algorithm used and end with your email. In the title section simply choose a name that will help you remember which device that key belongs to. On gitlab you can set an expiration date, by default it will expire in one year.
