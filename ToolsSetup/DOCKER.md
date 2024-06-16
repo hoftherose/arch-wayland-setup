@@ -9,3 +9,11 @@ sudo systemctl start docker.service
 sudo systemctl enable docker.service
 ```
 With this you should be able to run `docker ps`, but only with sudo. The next step is to setup your user to be able to run docker without sudo.
+
+## Setting user permissions
+When installing docker, the docker group should already be created, but you just need to add your user to the group.
+
+```
+sudo usermod -aG docker $USER
+newgrp docker #Run to avoid needing to restart terminal
+```
