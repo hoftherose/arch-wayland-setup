@@ -31,3 +31,14 @@ Once the key is created, go to your folder $HOME/.ssh and find the .pub key. Thi
 Setup is usually the same on all platforms, only the settings menu changes places. On github click on your profile picture top right and go to settings. In the "SSH and GPG keys" tab find the button "New SSH key". On gitlab click again on your profile picture top left, and go to preferences. In the "SSH Keys" tab click on "Add new key". From here the steps are mostly the same.
 
 In the key section paste your .pub file, it should start with the algorithm used and end with your email. In the title section simply choose a name that will help you remember which device that key belongs to. On gitlab you can set an expiration date, by default it will expire in one year.
+
+## Testing keys
+Now that you have your keys setup you will want to make sure that these are working correctly. Althoug hyou can simply attempt to pull a private repo or make changes where public collaboration is not allowed, we can test more directly with only a few commands. Run the following commands for depending on which repo you are using.
+
+```
+ssh -T git@github.com
+ssh -T git@gitlab.com
+ssh -T git@bitbucket.com
+```
+
+If for whatever reason you can't seem to connect, add the -vvv flag to get a very, very verbose output that will help identify the problem. Common issues could be that your computer is using the wrong key, usually set in the .ssh/config file.
