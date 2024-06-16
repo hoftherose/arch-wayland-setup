@@ -22,3 +22,7 @@ As of August 13, 2021, password authentication was removed from github, and over
 To create your keys on linux, you just need to run the following command: `ssh-keygen -t ed25519 -C "email@mail.com"`. Make sure the email is the same used to setup git config earlier. The value after -t is to setup the generation algorithm, so if there are any specifications on which you should use, this is where you should set it. For general usage `-t ed25519` is fine, for legacy systems, try swapping to `-t rsa -b 4096`.
 
 Once you enter the command you will be asked to confirm the location, as long as the file is stored in $HOME/.ssh/ the naming of the file is not important, but it is recommended to keep as default unless you have more keys, in which case, append your use case after the default name (e.g id_ed25519_gitlab).
+
+Once named, you will be asked to create a password, although this adds to the security of the keys, if you don't want to enter your password continuosly, simply enter an empty password. If you do setup a password, do remember it as there will be no way of using the keys without it. New keys are usually not hard to make but the nontheless it should be avoided for something such as this.
+
+Once the key is created, go to your folder $HOME/.ssh and find the .pub key. This is your public key which can be shown (try not to though). You will need this to follow the next steps.
