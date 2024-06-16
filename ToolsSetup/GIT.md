@@ -42,3 +42,6 @@ ssh -T git@bitbucket.com
 ```
 
 If for whatever reason you can't seem to connect, add the -vvv flag to get a very, very verbose output that will help identify the problem. Common issues could be that your computer is using the wrong key, usually set in the .ssh/config file.
+
+## Personal note
+I don't use github for developing personal projects anymore, I have grown more fond of using gitlab and it's CICD features (feature flags, kubernetes and GCP integrations, creating local runners etc). With that said, GitHub is still the place where most people go to SHARE their code. Because of this when creating a new project, I tend to mirror this to github, allowing with a description linking to the gitlab repo. This has many advantages, but is mostly to allow people to continue seeing my work while using, what I believe, to be the best tooling for the job.
