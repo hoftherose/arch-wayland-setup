@@ -15,5 +15,5 @@ When installing docker, the docker group should already be created, but you just
 
 ```
 sudo usermod -aG docker $USER
-newgrp docker #Run to avoid needing to restart terminal
+newgrp docker #Run to avoid needing to restart 
 ```
