@@ -12,3 +12,13 @@ If you have already used git (most probable) make sure you use the same name, bu
 git config --global user.email "email@mail.com"
 git config --global user.name "Your Name"
 ```
+
+Notice the global aspect of this command, make sure this is intentional and that you are not sharing/overwriting accounts. This short setup you should be able to commit and make change to git projets locally, and even remotely depending on the repo settings.
+
+## Setting up SSH Keys
+As of August 13, 2021, password authentication was removed from github, and overall is not recommended in any remote git setting. Although there are other alternatives, the best setup for ALL git sessions is to create and setup ssh keys for your system. The following steps assumes there are no restrictions on the algorithm choice or overall password needed, but we will show later how to debug any issues when connecting.
+
+### Creating keys
+To create your keys on linux, you just need to run the following command: `ssh-keygen -t ed25519 -C "email@mail.com"`. Make sure the email is the same used to setup git config earlier. The value after -t is to setup the generation algorithm, so if there are any specifications on which you should use, this is where you should set it. For general usage `-t ed25519` is fine, for legacy systems, try swapping to `-t rsa -b 4096`.
+
+Once you enter the command you will be asked to confirm the location, as long as the file is stored in $HOME/.ssh/ the naming of the file is not important, but it is recommended to keep as default unless you have more keys, in which case, append your use case after the default name (e.g id_ed25519_gitlab).
