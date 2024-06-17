@@ -17,3 +17,13 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 # For fish
 alias ranger='ranger --choosedir=$HOME/.rangerdir; set LASTDIR $(cat $HOME/.rangerdir); cd "$LASTDIR"'
 ```
+
+### Previewing images
+In order to allow kitty to be used for previewing images, go to rc.conf file created before. Make sure the following values are as you desire:
+
+```
+set preview_images true
+set preview_images_method kitty
+```
+
+If you want to change the image method, simply remember that we are not using X11 and therefor some alternatives might not work (situation could change in the future)
