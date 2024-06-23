@@ -1,0 +1,2 @@
+# Setup nvim on my computer
+There are many shortcuts and setup steps in neovim we need to setup, so much so that most will not be explained through this guide, but instead there will be references to where you can setup some of these features yourselves. If you want a quick intro on how to setup neovim, this video from the [Primeagen](https://www.youtube.com/watch?v=w7i4amO_zaE) although rushes though quite a few things, if you take it slowly it's a pretty good place to start.
