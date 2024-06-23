@@ -27,3 +27,14 @@ set preview_images_method kitty
 ```
 
 If you want to change the image method, simply remember that we are not using X11 and therefor some alternatives might not work (situation could change in the future)
+
+### Previewing javascript/images not working
+There's and issue with the scope.sh script in ranger sometimes that the appications/javascript MIME file type won't render in preview. If one disables the preview, then you won't see images. z+v will toggle this in ranger.
+
+If this is the case simply replace the following line as below.
+
+```
+# Render js applications as html.
+text/* | */xml) # Change this to below
+text/* | */xml | application/javascript)
+```
