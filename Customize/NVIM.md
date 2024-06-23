@@ -18,3 +18,6 @@ The following pácker line should be set, source the file and sync.
 ```
 use ({ 'kevinhwang91/rnvimr' })
 ```
+
+### Use ranger on startup
+Because nvim uses netwr on startup, we won't really have the benefits of using ranger until after we use the command to open ranger. Since we won't be using netwr anyways, we can disable it and enable ranger instead. There are multiple global variables in the repo that can be placed in .config/nvim/init.lua. The very first variable here will give us ranger on startup instead of netwr.
