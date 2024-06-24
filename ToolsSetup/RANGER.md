@@ -28,6 +28,8 @@ set preview_images_method kitty
 
 If you want to change the image method, simply remember that we are not using X11 and therefor some alternatives might not work (situation could change in the future)
 
+> NOTE: When setting up rnvimr, it will probably be better to instead use ueberzugpp as this now has support for wayland and nvim creates a different terminal session (TERM will not equal xterm-kitty)
+
 ### Previewing javascript/images not working
 There's and issue with the scope.sh script in ranger sometimes that the appications/javascript MIME file type won't render in preview. If one disables the preview, then you won't see images. z+v will toggle this in ranger.
 
