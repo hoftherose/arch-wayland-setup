@@ -26,3 +26,8 @@ Because nvim uses netwr on startup, we won't really have the benefits of using r
 packer
 telescope
 rnvimr
+lazygit
+lazydocker
+cyberdream
+treesitter
+harpoon
