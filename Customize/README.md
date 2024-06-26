@@ -91,6 +91,13 @@ fish                # Terminal shell
 mozc                # Japanese translate interface
 fcitx5              # Multi-language support
 fcitx5-config       # Configuration UI for fcitx5
+htop                # Resource monitoring
+k9s                 # Kubernetes TUI
+udisks              # USB mount/dismount utility
+lazygit             # Git TUI
+lazydocker          # Docker TUI
+ueberzugpp          # Image viewer for terminal (maintained version of ueberzug)
+obsidian            # Note taking application
 ```
 
 ### Audio and video dependencies
