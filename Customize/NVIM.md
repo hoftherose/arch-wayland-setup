@@ -31,3 +31,4 @@ lazydocker
 cyberdream
 treesitter
 harpoon
+k9s (k8s)
