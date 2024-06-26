@@ -98,6 +98,8 @@ lazygit             # Git TUI
 lazydocker          # Docker TUI
 ueberzugpp          # Image viewer for terminal (maintained version of ueberzug)
 obsidian            # Note taking application
+rclone              # Blob storage syncer
+rclone browser      # rclone GUI
 ```
 
 ### Audio and video dependencies
