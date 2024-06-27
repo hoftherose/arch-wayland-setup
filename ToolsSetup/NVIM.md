@@ -41,7 +41,7 @@ mason               # LSP, linter and formater manager that works with lsp-zero 
 ## Hidden dependencies
 As they come I will be posting hidden dependencies here, some are obvious but others (e.g rg) are not so much. Some of the previous plugins will not work, or will work limitedly without these.
 
-rg                  # Needed by telescope
+ripgrep             # Needed by telescope
 obsidian            # Needed by obsidian
 lazygit             # Needed by lazygit
 lazydocker          # Needed by lazydocker
