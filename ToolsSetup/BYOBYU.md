@@ -1,0 +1,2 @@
+# Setup byobu on your new computer
+Byobu is a multiplexer that allows creating virtual terminals, this means that you can close the window with the session still running in the background. Byobu also has a shared-session, meaning you can access the session through multiple computers or terminals and have them synced. By default it wraps around tmux and has the same commands, which means that documentation should be reviewed for tmux, and not for byobu as this will not contain correct commands.
