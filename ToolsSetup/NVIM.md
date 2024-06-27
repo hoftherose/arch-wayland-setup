@@ -23,15 +23,26 @@ use ({ 'kevinhwang91/rnvimr' })
 Because nvim uses netwr on startup, we won't really have the benefits of using ranger until after we use the command to open ranger. Since we won't be using netwr anyways, we can disable it and enable ranger instead. There are multiple global variables in the repo that can be placed in .config/nvim/init.lua. The very first variable here will give us ranger on startup instead of netwr.
 
 ## List of Packages
-packer
-telescope
-rnvimr
-lazygit
-lazydocker
-cyberdream
-treesitter
-harpoon
-k9s (k8s)
-gitsigns
-better_escape
-obsidian
+packer              # Plugin manager
+telescope           # Search utility for files/folders
+rnvimr              # Integrating TUI file explorer
+lazygit             # Integrating TUI git utility
+lazydocker          # Integrating TUI docker utility
+k9s                 # Integrating TUI k8s utility (use self maintained version)
+cyberdream          # Color Theme
+treesitter          # Text parsing generator
+harpoon             # File quick swap navigation tool
+gitsigns            # Color coded git changes in vim signcolumn
+better_escape       # Adds quick escape shortcut for insert mode
+obsidian            # Note taking app utilities
+
+## Hidden dependencies
+As they come I will be posting hidden dependencies here, some are obvious but others (e.g rg) are not so much. Some of the previous plugins will not work, or will work limitedly without these.
+
+rg                  # Needed by telescope
+obsidian            # Needed by obsidian
+lazygit             # Needed by lazygit
+lazydocker          # Needed by lazydocker
+k9s                 # Needed by k9s
+git                 # Needed by lazygit and gitsigns
+docker              # Needed by lazydocker
