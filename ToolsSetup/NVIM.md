@@ -48,3 +48,6 @@ lazydocker          # Needed by lazydocker
 k9s                 # Needed by k9s
 git                 # Needed by lazygit and gitsigns
 docker              # Needed by lazydocker
+
+## Debugging
+If you need to debug a shortcut or command on nvim, use :message to view the "logs". This would show if ripgrep (rg) is not installed, for example.
