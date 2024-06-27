@@ -100,6 +100,9 @@ ueberzugpp          # Image viewer for terminal (maintained version of ueberzug)
 obsidian            # Note taking application
 rclone              # Blob storage syncer
 rclone browser      # rclone GUI
+byobu               # Terminal multiplexer
+foot/kitty          # Terminal with wayland support
+# Kitty will more than likely be installed with wayland, but foot can be used as a more lightweight wayland alternative
 ```
 
 ### Audio and video dependencies
