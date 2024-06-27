@@ -35,6 +35,8 @@ harpoon             # File quick swap navigation tool
 gitsigns            # Color coded git changes in vim signcolumn
 better_escape       # Adds quick escape shortcut for insert mode
 obsidian            # Note taking app utilities
+lsp-zero            # Setup lsp server for various languages
+mason               # LSP, linter and formater manager that works with lsp-zero (installed indirectly)
 
 ## Hidden dependencies
 As they come I will be posting hidden dependencies here, some are obvious but others (e.g rg) are not so much. Some of the previous plugins will not work, or will work limitedly without these.
