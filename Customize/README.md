@@ -74,9 +74,15 @@ ueberzugpp          # Image viewer for terminal (maintained version of ueberzug)
 lazydocker          # Docker TUI
 lazygit             # Git TUI
 k9s                 # Kubernetes TUI
-udisks              # USB mount/dismount utility
-btop                # Resource monitoring
+conda               # Python package and environment manager (heavy)
 kubectl             # kubernetes command line utility
+udisks              # USB mount/dismount utility
+jq                  # Json query utility
+btop                # Resource monitoring
+fzf                 # Fuzzy finder tool
+lsd                 # Better looking ls command
+tlrc                # Client for TLDR, a simpler man page alternative
+bat                 # Cleaner cat alternative
 ```
 
 ### Apps
@@ -136,3 +142,8 @@ wlogout             # Power off integration
 inotify-tools       # Tooling for checking when files are modified (scripting config)
 python-pywal        # Utils for getting color pallet from image
 ```
+
+## Managing Customizations
+Many of the previous packages have configurations that in multiple cases are essential to this setup, to manage all of these we use 'chezmoi', a utility for managing dotfiles (or config files in genral) using git.
+
+
