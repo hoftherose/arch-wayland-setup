@@ -60,49 +60,37 @@ Once installed edit `/etc/mkinitcpio.conf` and modify the `MODULES` variable to 
 sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
 ```
 
-### More packages for hyprland
-The following list would be installed. There will be a folder for config changes for each of these when needed.
+### Terminal TUIs and add-ons
+Terminal tooling and utilities for a better experience
 
 ```
-sddm-git            # Login (display) manager Git version to avoid bugs
-waybar              # Top menu bar for wayland
-ttf-font-awesome    # For waybar font
-ttf-sazanami        # Japanese char fonts
-ttf-vlgothic        # Japanese char fonts
-ttf-meslo-nerd-font # Powerlevel 10k fonts for waybar
-swaybg              # background setter
-waypaper            # Frontend for swaybg
-wofi                # Application menu
-grim                # Screenshot tool
-slurp               # Screen selection tool
-firefox             # Or navigator of your choice
-discord             # Voice and chat application
-krita               # Painting software
-swaync              # Notification daemon
-spotify             # Music player
-spicetify           # Customize spotify, install spicetify-marketplace for better integration.
-ranger              # Vim-like terminal file manager
-wallset             # Background manager which allows videos.
-wev                 # Used for seeing keystrokes before setting keybindings
-wlogout             # Power off integration
-inotify-tools       # Tooling for checking when files are modified (scripting config)
-python-pywal        # Utils for getting color pallet from image
+# Kitty will more than likely be installed with wayland, but foot can be used as a more lightweight wayland alternative
+foot/kitty          # Terminal with wayland support
 fish                # Terminal shell
-mozc                # Japanese translate interface
-fcitx5              # Multi-language support
-fcitx5-config       # Configuration UI for fcitx5
-htop                # Resource monitoring
+byobu               # Terminal multiplexer
+nvim                # Extensible Vim fork which allows for plugins
+ranger              # Vim-like terminal file manager
+ueberzugpp          # Image viewer for terminal (maintained version of ueberzug)
+lazydocker          # Docker TUI
+lazygit             # Git TUI
 k9s                 # Kubernetes TUI
 udisks              # USB mount/dismount utility
-lazygit             # Git TUI
-lazydocker          # Docker TUI
-ueberzugpp          # Image viewer for terminal (maintained version of ueberzug)
+btop                # Resource monitoring
+kubectl             # kubernetes command line utility
+```
+
+### Apps
+Applications with GUI's or extensions for these-
+
+```
+firefox             # Or navigator of your choice
+spotify             # Music player
+spicetify           # Customize spotify, install spicetify-marketplace for better integration.
+discord             # Voice and chat application
+krita               # Painting software
 obsidian            # Note taking application
-rclone              # Blob storage syncer
 rclone browser      # rclone GUI
-byobu               # Terminal multiplexer
-foot/kitty          # Terminal with wayland support
-# Kitty will more than likely be installed with wayland, but foot can be used as a more lightweight wayland alternative
+rclone              # Blob storage syncer
 ```
 
 ### Audio and video dependencies
@@ -116,4 +104,35 @@ pipewire-jack       # pipewire jack client
 pipewire-pulse      # pipewire pulseaudio client
 pavucontrol         # Control gui for pipewire
 helvum (optional)   # Patch bay for pipewire, audio routing and filtering
+```
+
+### Languages and Fonts
+
+```
+mozc                # Japanese translate interface
+fcitx5              # Multi-language support
+fcitx5-config       # Configuration UI for fcitx5
+ttf-font-awesome    # For waybar font
+ttf-sazanami        # Japanese char fonts
+ttf-vlgothic        # Japanese char fonts
+ttf-meslo-nerd-font # Powerlevel 10k fonts for waybar
+```
+
+### More packages for hyprland
+More Desktop Environment centric tools, some are specific to wayland, others can also be used in X11, but all work well in hyprland.
+
+```
+sddm-git            # Login (display) manager Git version to avoid bugs
+waybar              # Top menu bar for wayland
+swaybg              # background setter
+waypaper            # Frontend for swaybg
+wofi                # Application menu
+grim                # Screenshot tool
+slurp               # Screen selection tool
+swaync              # Notification daemon
+wallset             # Background manager which allows videos.
+wev                 # Used for seeing keystrokes before setting keybindings
+wlogout             # Power off integration
+inotify-tools       # Tooling for checking when files are modified (scripting config)
+python-pywal        # Utils for getting color pallet from image
 ```
