@@ -75,7 +75,6 @@ lazydocker          # Docker TUI
 lazygit             # Git TUI
 k9s                 # Kubernetes TUI
 conda               # Python package and environment manager (heavy)
-kubectl             # kubernetes command line utility
 udisks              # USB mount/dismount utility
 jq                  # Json query utility
 btop                # Resource monitoring
@@ -122,6 +121,14 @@ ttf-font-awesome    # For waybar font
 ttf-sazanami        # Japanese char fonts
 ttf-vlgothic        # Japanese char fonts
 ttf-meslo-nerd-font # Powerlevel 10k fonts for waybar
+```
+
+### Cloud tooling
+```
+kubectl             # Kubernetes CLI
+aws-cli             # AWS terminal CLI
+azure-cli           # Azure terminal CLI
+gcp-cli             # GCP terminal CLI
 ```
 
 ### More packages for hyprland
