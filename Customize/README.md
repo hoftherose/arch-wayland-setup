@@ -153,4 +153,9 @@ python-pywal        # Utils for getting color pallet from image
 ## Managing Customizations
 Many of the previous packages have configurations that in multiple cases are essential to this setup, to manage all of these we use 'chezmoi', a utility for managing dotfiles (or config files in genral) using git.
 
+The dotfiles for this project is in https://gitlab.com/hoftherose-config/dotfiles, so to add it simply run 
 
+```
+chezmoi init https://gitlab.com/hoftherose-config/dotfiles
+chezmoi update
+```
