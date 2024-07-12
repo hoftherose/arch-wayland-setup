@@ -148,6 +148,7 @@ wev                 # Used for seeing keystrokes before setting keybindings
 wlogout             # Power off integration
 inotify-tools       # Tooling for checking when files are modified (scripting config)
 python-pywal        # Utils for getting color pallet from image
+pyprland            # Set of plugins for hyprland
 ```
 
 ## Managing Customizations
