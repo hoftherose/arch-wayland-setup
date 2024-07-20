@@ -82,6 +82,7 @@ fzf                 # Fuzzy finder tool
 lsd                 # Better looking ls command
 tlrc                # Client for TLDR, a simpler man page alternative
 bat                 # Cleaner cat alternative
+fd                  # Alternative to find (needed for venvselector.nvim)
 ```
 
 ### Apps
