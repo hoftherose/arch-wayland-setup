@@ -92,7 +92,7 @@ Applications with GUI's or extensions for these-
 firefox             # Or navigator of your choice
 spotify             # Music player
 spicetify           # Customize spotify, install spicetify-marketplace for better integration.
-discord             # Voice and chat application
+vesktop             # Linux friendly discord, voice and chat application
 krita               # Painting software
 obsidian            # Note taking application
 rclone browser      # rclone GUI
