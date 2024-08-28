@@ -115,7 +115,6 @@ helvum (optional)   # Patch bay for pipewire, audio routing and filtering
 ### Languages and Fonts
 
 ```
-mozc                # Japanese translate interface
 fcitx5              # Multi-language support
 fcitx5-mozc         # Enable mozc for fcitx
 fcitx5-config       # Configuration UI for fcitx5
