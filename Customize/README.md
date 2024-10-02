@@ -139,6 +139,7 @@ More Desktop Environment centric tools, some are specific to wayland, others can
 sddm-git            # Login (display) manager Git version to avoid bugs
 waybar              # Top menu bar for wayland
 swaybg              # background setter
+swaylock-effects    # Lock screen for wayland (more effects)
 waypaper            # Frontend for swaybg
 wofi                # Application menu
 grim                # Screenshot tool
